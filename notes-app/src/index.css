@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+:root {
+    --primary-color: #ef4444
+}
+
+sub {font-size: xx-small; vertical-align: sub}
+sup {font-size: xx-small; vertical-align: super}
+
+.note-container-height {height: calc(100vh - 48px);}
+.note-height {height: calc(100vh - 120px)} 
+
+/*24px for editor navbar, 24px so it doesn't exceed the rounded bottom*/
+.editor-content-size {height: calc(100% - 24px - 24px)}
+
+.filePickerSize {width: calc(100% - 48px)}
+
+#editor > {
+  margin-top: 8px;
+}
+
+/*toggle slider*/
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--primary-color);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--primary-color);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /*range sliders*/
+input[type=range]{
+    -webkit-appearance: none;
+    background: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #999;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #888;
+}
+
+/* Tippy Themes */
+.tippy-box[data-theme~='invis-bg'] {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+@layer components {
+    body {
+        @apply overflow-clip
+    }
+
+    .CENTER-POSITION {
+        @apply absolute top-1/2 left-1/2 transform translate-x-[-50%] 
+        translate-y-[-50%]
+    }
+
+    .ALERT-MIDDLE {
+        @apply rounded-md p-4 absolute left-[50%] grid bg-gray-200 h-[15vh] 
+        w-[20vw] text-gray-700 text-center bg-opacity-70 shadow-blurred
+    }
+    
+    .SETTINGS-PANEL {
+        @apply rounded-lg absolute left-[50%] grid bg-gray-200 h-[75vh] 
+        w-[60vw] text-gray-700 text-center bg-opacity-90 shadow-blurred
+    }
+
+    .navbar-icon {
+        @apply text-white hover:text-primary transition-all duration-300
+    }
+
+    .no-note-button {
+        @apply w-24 bg-gray-600 rounded-sm bg-opacity-70 h-8 
+        text-black transition-all duration-300 hover:bg-primary
+    }
+
+    .settings-sidebar-header {
+        @apply flex hover:bg-gray-400 transition-colors duration-200 h-10 
+        justify-center items-center border-b-[0.5px] border-gray-400 
+    }
+
+    .bg-preview {
+        @apply w-[12.5vw] h-[12.5vh] bg-cover bg-no-repeat border-gray-500 border-2
+    }
+
+    .sidebar-text {
+        @apply text-white flex mt-2 ml-2 truncate
+    }
+
+    .quote-block {
+        @apply before:bg-blue-500 before:h-8 before:w-2
+    }
+
+    .editor-img {
+        @apply w-1/2
+    }
+}
+
+
+
