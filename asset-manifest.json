@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/notes-app/static/css/main.620a24f2.css",
+    "main.js": "/notes-app/static/js/main.6739fd75.js",
+    "static/js/787.9243050f.chunk.js": "/notes-app/static/js/787.9243050f.chunk.js",
+    "static/media/bg6.jpg": "/notes-app/static/media/bg6.cabf77ccd61dafa59ed8.jpg",
+    "static/media/bg1.jpg": "/notes-app/static/media/bg1.2865f870833de6c71be6.jpg",
+    "static/media/bg0.jpg": "/notes-app/static/media/bg0.cc00b46c6c034d3d3a8c.jpg",
+    "static/media/bg7.jpg": "/notes-app/static/media/bg7.1232d1f2528649cb10a2.jpg",
+    "static/media/bg2.jpg": "/notes-app/static/media/bg2.12683a92ffe207996393.jpg",
+    "static/media/bg5.jpg": "/notes-app/static/media/bg5.2a43c8886928eeb95f4d.jpg",
+    "static/media/bg4.jpg": "/notes-app/static/media/bg4.764e619b7f9aa7fa594b.jpg",
+    "static/media/bg3.jpg": "/notes-app/static/media/bg3.2e5d0975778d1fcbe79b.jpg",
+    "static/media/bg8.jpg": "/notes-app/static/media/bg8.d53fb5dfb2d9bafec48f.jpg",
+    "static/media/bg6.png": "/notes-app/static/media/bg6.6cb8d28d63fbe9be1a7d.png",
+    "static/media/bg9.jpg": "/notes-app/static/media/bg9.cc5eb29fc0394eec8808.jpg",
+    "static/media/bg0.png": "/notes-app/static/media/bg0.153223ee6bd76ea3c115.png",
+    "static/media/bg1.png": "/notes-app/static/media/bg1.6f257e35c990583c8527.png",
+    "static/media/bg7.png": "/notes-app/static/media/bg7.44f4a5daa5694a672187.png",
+    "static/media/bg5.png": "/notes-app/static/media/bg5.ce73999dbbf46e0645ad.png",
+    "static/media/bg9.png": "/notes-app/static/media/bg9.8112022c83c25da07711.png",
+    "static/media/bg2.png": "/notes-app/static/media/bg2.bbc814c5d159ff108b03.png",
+    "static/media/bg4.png": "/notes-app/static/media/bg4.23a73346f85c3eb3a237.png",
+    "static/media/bg8.png": "/notes-app/static/media/bg8.f9294e04fa49610ce8d6.png",
+    "static/media/bg3.png": "/notes-app/static/media/bg3.ced6af65287846594155.png",
+    "index.html": "/notes-app/index.html",
+    "main.620a24f2.css.map": "/notes-app/static/css/main.620a24f2.css.map",
+    "main.6739fd75.js.map": "/notes-app/static/js/main.6739fd75.js.map",
+    "787.9243050f.chunk.js.map": "/notes-app/static/js/787.9243050f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.620a24f2.css",
+    "static/js/main.6739fd75.js"
+  ]
+}
